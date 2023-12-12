@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="background-color:#44546A">
+<img id="im" src="benf.png"   >
+
+
+<footer style="text-align: center; background-color:#44546A; color:white;height:50px;margin-top:20px;font-size:30px" id="F"> </footer>
+</body>
+
+<script>
+var count = localStorage.count
+
+if (count =="NaN"){
+count = 0
+}
+count = parseInt(count)
+count = count + 1
+localStorage.count = count
+
+
+
+
+
+
+
+
+console.log(localStorage.count)
+document.getElementById("F").innerHTML="welcome to our " +localStorage.count+" visitors!!!"
+var c=1.1
+    let width = screen.width;
+    document.getElementById("im").width=width
+    document.getElementById("im").height=c*width
+</script>
+</html>
